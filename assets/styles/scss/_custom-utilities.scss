@@ -1,0 +1,179 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    'z': (
+      property: z-index,
+      class: z,
+      values: auto 1 2 3 4 5
+    ),
+    'cursor': (
+      property: cursor,
+      class: cursor,
+      responsive: true,
+      values: auto pointer grab not-allowed
+    ),
+    'opacity': (
+      property: opacity,
+      class: opacity,
+      values: $decimal-10-spacers-without-suffix
+    ),
+    'row-gap': (
+      responsive: true,
+      property: row-gap,
+      class: row-gap,
+      values: $spacers
+    ),
+    'column-gap': (
+      responsive: true,
+      property: column-gap,
+      class: column-gap,
+      values: $spacers
+    ),
+    'width':
+      bootstrap-utility-add-values(
+        $utilities,
+        'width',
+        map-merge(
+          $percentage-10-spacers-without-suffix,
+          $rem-20-spacers-with-suffix
+        )
+      ),
+    'height':
+      bootstrap-utility-add-values(
+        $utilities,
+        'height',
+        map-merge(
+          $percentage-10-spacers-without-suffix,
+          $rem-20-spacers-with-suffix
+        )
+      ),
+    // Margin
+    'margin':
+      bootstrap-utility-replace-values(
+        $utilities,
+        'margin',
+        map-merge(
+          $rem-decimal-spacers-without-suffix,
+          $rem-5-spacers-without-suffix
+        )
+      ),
+    'margin-x':
+      bootstrap-utility-replace-values(
+        $utilities,
+        'margin-x',
+        map-merge(
+          $rem-decimal-spacers-without-suffix,
+          $rem-5-spacers-without-suffix
+        )
+      ),
+    'margin-y':
+      bootstrap-utility-replace-values(
+        $utilities,
+        'margin-y',
+        map-merge(
+          $rem-decimal-spacers-without-suffix,
+          $rem-5-spacers-without-suffix
+        )
+      ),
+    'margin-top':
+      bootstrap-utility-replace-values(
+        $utilities,
+        'margin-top',
+        map-merge(
+          $rem-decimal-spacers-without-suffix,
+          $rem-10-spacers-without-suffix
+        )
+      ),
+    'margin-end':
+      bootstrap-utility-replace-values(
+        $utilities,
+        'margin-end',
+        map-merge(
+          $rem-decimal-spacers-without-suffix,
+          $rem-5-spacers-without-suffix
+        )
+      ),
+    'margin-bottom':
+      bootstrap-utility-replace-values(
+        $utilities,
+        'margin-bottom',
+        map-merge(
+          $rem-decimal-spacers-without-suffix,
+          $rem-5-spacers-without-suffix
+        )
+      ),
+    'margin-start':
+      bootstrap-utility-replace-values(
+        $utilities,
+        'margin-start',
+        map-merge(
+          $rem-decimal-spacers-without-suffix,
+          $rem-5-spacers-without-suffix
+        )
+      ),
+    // Padding
+    'padding':
+      bootstrap-utility-replace-values(
+        $utilities,
+        'padding',
+        map-merge(
+          $rem-decimal-spacers-without-suffix,
+          $rem-5-spacers-without-suffix
+        )
+      ),
+    'padding-x':
+      bootstrap-utility-replace-values(
+        $utilities,
+        'padding-x',
+        map-merge(
+          $rem-decimal-spacers-without-suffix,
+          $rem-5-spacers-without-suffix
+        )
+      ),
+    'padding-y':
+      bootstrap-utility-replace-values(
+        $utilities,
+        'padding-y',
+        map-merge(
+          $rem-decimal-spacers-without-suffix,
+          $rem-5-spacers-without-suffix
+        )
+      ),
+    'padding-top':
+      bootstrap-utility-replace-values(
+        $utilities,
+        'padding-top',
+        map-merge(
+          $rem-decimal-spacers-without-suffix,
+          $rem-5-spacers-without-suffix
+        )
+      ),
+    'padding-end':
+      bootstrap-utility-replace-values(
+        $utilities,
+        'padding-end',
+        map-merge(
+          $rem-decimal-spacers-without-suffix,
+          $rem-5-spacers-without-suffix
+        )
+      ),
+    'padding-bottom':
+      bootstrap-utility-replace-values(
+        $utilities,
+        'padding-bottom',
+        map-merge(
+          $rem-decimal-spacers-without-suffix,
+          $rem-5-spacers-without-suffix
+        )
+      ),
+    'padding-start':
+      bootstrap-utility-replace-values(
+        $utilities,
+        'padding-start',
+        map-merge(
+          $rem-decimal-spacers-without-suffix,
+          $rem-5-spacers-without-suffix
+        )
+      )
+  )
+);

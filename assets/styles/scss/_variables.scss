@@ -1,0 +1,79 @@
+// Global font values
+$base-font-size: 16px;
+$base-font-family: 'Roboto-Regular';
+$bold-font-family: 'Roboto-Bold';
+$medium-font-family: 'Roboto-Medium';
+$base-font-weight: 400;
+
+// Resolution breakpoints
+$grid-breakpoints: (
+  // SectionStart - Don't use below values, but don't delete it as used by bootstrap
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  // SectionEnd
+  desktop-sm-begin: 1024px,
+  desktop-sm-end: 1279px,
+  desktop-md-begin: 1280px,
+  desktop-md-end: 1599px,
+  desktop-lg-start: 1600px
+);
+
+// Colors
+$black: black;
+$white-color: #fff;
+$primary-blue: #1253cc;
+$secondary-blue: #1453cc;
+$hover-blue: #1145a8;
+$hover-grey: #efefef;
+$shadow-color: #0089ff26;
+$placeholder-color: #8d8d8d;
+$printview-header-color: #f8f4f4;
+$printview-body-background-color: #fafafa;
+$primary-background-color: #fafafa;
+$primary-button-color: #f8f8f8;
+$border-divider-color: #dddddd;
+$primary-menubar-active-color: #00acc2;
+$vibrant-yellow: #ffeb00;
+$error-red-color: #ff0000;
+$cyan-color: #006875;
+$sapphire-blue-color: #1352ca;
+$taupe-gray: #888888;
+
+// Maps
+$rem-5-spacers-without-suffix: generate-spacers-map(5, 1rem, '');
+$rem-10-spacers-without-suffix: generate-spacers-map(10, 1rem, '');
+$rem-decimal-spacers-without-suffix: (
+  auto: auto,
+  0: 0rem,
+  decimal25: 0.25rem,
+  decimal50: 0.5rem,
+  decimal75: 0.75rem
+);
+$rem-20-spacers-with-suffix: generate-spacers-map(20, 1rem, 'rem');
+$percentage-10-spacers-without-suffix: generate-spacers-map(10, 10%);
+$decimal-10-spacers-without-suffix: generate-spacers-map(10, 0.1);
+
+// Font sizes
+$font-sizes: (
+  xs: 0.75rem,
+  sm: 0.875rem,
+  base: 1rem,
+  lg: 1.125rem,
+  xl: 1.25rem,
+  2xl: 1.5rem,
+  3xl: 1.75rem,
+  4xl: 2rem,
+  5xl: 2.5rem,
+  6xl: 3rem,
+  7xl: 4rem,
+  8xl: 6rem
+);
+
+// Box shadow variable override
+$box-shadow-lg: 0 1rem 3rem $shadow-color;
+
+$one-rem: 1rem;

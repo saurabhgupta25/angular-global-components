@@ -1,0 +1,7 @@
+@mixin box-shadow($color-value: #0089FF26) {
+    box-shadow: 0 1rem 3rem $color-value;
+}
+
+@mixin box-shadow-large($color-value: #0089FF14) {
+    box-shadow: 0px 20px 40px $color-value; 
+}

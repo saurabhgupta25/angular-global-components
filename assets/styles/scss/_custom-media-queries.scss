@@ -1,0 +1,41 @@
+$space-left-right: 8rem;
+$space-left-right-sm: 4rem;
+
+.content-margin {
+  margin-left: $space-left-right;
+  margin-right: $space-left-right;
+}
+
+.content-padding {
+  padding-left: $space-left-right;
+  padding-right: $space-left-right;
+}
+
+.content-margin-sm {
+  margin-left: $space-left-right-sm;
+  margin-right: $space-left-right-sm;
+}
+
+.content-padding-sm {
+  padding-left: $space-left-right-sm;
+  padding-right: $space-left-right-sm;
+}
+
+@media (min-width: map-get($grid-breakpoints, 'desktop-lg-start')) {
+  .content-margin {
+    margin-left: $space-left-right * 2;
+    margin-right: $space-left-right * 2;
+  }
+  .content-padding {
+    padding-left: $space-left-right * 2;
+    padding-right: $space-left-right * 2;
+  }
+  .content-margin-sm {
+    margin-left: $space-left-right-sm * 2;
+    margin-right: $space-left-right-sm * 2;
+  }
+  .content-padding-sm {
+    padding-left: $space-left-right-sm * 2;
+    padding-right: $space-left-right-sm * 2;
+  }
+}

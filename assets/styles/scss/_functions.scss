@@ -1,0 +1,21 @@
+@function generate-spacers-map($finalIndex: 30, $spacer: 1rem, $keySuffix: '') {
+    $spacers-map: ();
+    @for $i from 1 through $finalIndex {
+        $spacers-map: map-merge($spacers-map, ('#{$i}#{$keySuffix}': $i * $spacer));
+    }
+    
+    @return $spacers-map;
+}
+
+@function bootstrap-utility-add-values($utilities, $propertyName, $valuesMaptoAdd) {
+    @return map-merge(map-get($utilities, $propertyName),
+                (values: map-merge(map-get(map-get($utilities, $propertyName), "values"), $valuesMaptoAdd),
+                )
+            );
+}
+
+@function bootstrap-utility-replace-values($utilities, $propertyName, $valuesMaptoReplace) {
+    @return map-merge(map-get($utilities, $propertyName),
+                (values: $valuesMaptoReplace)
+            );
+}
